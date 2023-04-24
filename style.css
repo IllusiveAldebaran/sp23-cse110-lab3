@@ -22,6 +22,7 @@ ul {
 }
 
 video {
+  position: static;
   border: 5px solid brown;
   display: block;
   margin: auto;
@@ -51,11 +52,33 @@ span.emph {
 
 
 form {
-  position: static;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   border-style: groove;
   border-color: blue;
   border-width: 7px;
   border-radius: 20px;
+}
+
+p > b,em,i,strong {
+  text-decoration: solid underline green;
+}
+
+div p {
+  font-family: "Arial", sans-sarif;
+}
+
+#mes2 ~ *{
+  text-decoration:solid underline blue;
+}
+
+#mes3 + *{
+  text-decoration:dotted overline black;
+}
+
+p.messages#mes3 {
+  color:#FF00FF;
 }
 
 br {
