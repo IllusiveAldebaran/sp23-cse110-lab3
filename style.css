@@ -1,0 +1,135 @@
+*{
+  font-family: "Liberation", sans-serif;
+  font-size: 16px;
+}
+
+/* color a nice beige background, fitting for SD */
+body {
+  background-color: beige;
+}
+
+a[href="https://archlinux.org"]{
+  border: 2px dotted blue;
+}
+
+.names {
+  display:block;
+}
+
+ul {
+  min-width:1ex;
+  max-width:50ex;
+}
+
+video {
+  border: 5px solid brown;
+  display: block;
+  margin: auto;
+  padding: 0px 2px 4px 6px;
+}
+
+h1 {
+  color:rgb(80,29,29);
+  font-size: 24px;
+  margin: auto;
+}
+
+#list-set {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 5rem;
+  padding-right: 1rem;
+}
+
+#hidden {
+  display:none;
+}
+
+span.emph {
+  text-decoration: wavy underline black;
+}
+
+
+form {
+  position: static;
+  border-style: groove;
+  border-color: blue;
+  border-width: 7px;
+  border-radius: 20px;
+}
+
+br {
+  height:1in;
+}
+
+.moreso {
+  display:flex;
+  flex-wrap: nowrap | wrap | wrap-reverse;
+  justify-content: space-between;
+}
+img,audio {
+  display:block;
+  margin:auto;
+}
+
+audio {
+  width:200px;
+}
+
+h2 {
+  color:hsl(122,68%,31%);
+  font-family: 'Vina Sans', sans-serif;
+}
+
+h3 {
+  color:hsl(122,68%,31%);
+  font-size: 20px;
+}
+
+#closingremarks {
+  margin-top: 0.5em;
+  margin-left: 1in;
+}
+
+#voidlinux:hover {
+  animation: void-out 5s infinite; /* Repeat every 5 seconds */
+}
+
+
+@media (any-hover: hover) {
+  #myname:hover {
+    background: yellow;
+  }
+}
+
+fieldset {
+  display: grid | inline-grid;;
+  align-content: start | end | stretch;    
+}
+
+button:active {
+  animation: bob 5s infinite; /* Repeat every 5 seconds */
+}
+
+@keyframes void-out {
+  0% {
+    color: #000000;
+  }
+  50% {
+    color: #FFFFFF;
+  }
+  100% 000{
+    color: #000000; 
+  }
+}
+@keyframes bob {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
